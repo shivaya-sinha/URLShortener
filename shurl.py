@@ -24,6 +24,7 @@ def shurl(longUrl):
  
     except Exception, e:
         print "unexpected error %s" % e
+    short_url = "ERROR"     
     return short_url
 		 
 if __name__ == '__main__':
