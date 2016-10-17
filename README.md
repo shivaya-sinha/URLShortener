@@ -4,7 +4,7 @@ This is a simple python script to shorten long URLs easily.
 The long URL is entered as the command line arguments and the shortened url is given as output.
 
 ##Usage 
-`pyhton shurl.py http://github.com/shivaya-sinha/xyzRepository`
+`python shurl.py http://github.com/shivaya-sinha/xyzRepository`
 
 Output: `http://goo.gl/xxxxx`
 

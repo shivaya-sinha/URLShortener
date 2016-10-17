@@ -5,6 +5,8 @@ import httplib2
 import simplejson as json
  
 API_KEY = ENTER_YOUR_API_KEY_HERE           
+#The API key can be obtained by visiting the Google Developers Console 
+
  
 def shurl(longUrl):
     
@@ -19,8 +21,7 @@ def shurl(longUrl):
     h = httplib2.Http('.cache')
     try:
         headers, response = h.request(apiUrl, "POST", json.dumps(data), headers)
-	print response 
-        short_url = json.loads(response)['id']
+	    short_url = json.loads(response)['id']
  
     except Exception, e:
         print "unexpected error %s" % e
